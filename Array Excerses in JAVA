@@ -66,3 +66,19 @@ public class FindDuplicate {
 		}
 	}
 }
+
+5.Find the element in array
+
+public class FindElement {
+	public static void main(String[] args) {
+		int[] a = {10,20,30,40,50};
+		   int key = 30;
+		   for(int i=0;i<a.length;i++) {
+			   if(key==a[i]) {
+				   System.out.print("The index value of the key is "+i);
+			   }
+		   }
+				
+      }		
+}
+
