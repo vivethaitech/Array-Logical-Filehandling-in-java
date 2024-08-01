@@ -20,3 +20,19 @@ public class MergeArray {
 	}
 }
 
+2.Copy one array value into another array
+
+public class CopyArray {
+	public static void main(String[] args) {
+		int[] a= {10,20,30};
+	    int[] b= new int[a.length];
+	    
+	   for(int i=0;i<b.length;i++) {
+		   b[i]=a[i];
+		}
+			System.out.print(Arrays.toString(b));
+		
+	}
+
+}
+
