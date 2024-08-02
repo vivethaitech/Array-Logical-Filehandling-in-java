@@ -130,3 +130,21 @@ System.out.print(array[i]+" ");
 }		
 }
 }
+
+9.Insert element in array
+
+public class Explore {
+public static void main(String[] args) {
+int[] array = {20,30,20,40,50,40,60};
+int position=3;
+int value=80;
+for(int i=array.length-1;i>position;i--) {
+array[i]=array[i-1];
+}
+array[position]=value;
+for(int i=0;i<array.length;i++) {
+System.out.print(array[i] + " ");
+}
+}
+}
+
