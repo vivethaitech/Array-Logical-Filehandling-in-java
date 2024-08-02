@@ -126,7 +126,7 @@ System.out.print(array[i]+" ");
 -------------------------------------------------------------------------------------------------------
 9.Insert element in array
 
-public class Explore {
+public class InsertElement {
 public static void main(String[] args) {
 int[] array = {20,30,20,40,50,40,60};
 int position=3;
@@ -191,7 +191,28 @@ System.out.println("Total even count: "+oddcount);
 }
 }
 -----------------------------------------------------------------------------------------------------------
-13.put even and odd in seperate array from one array
+13.Find odd and even value in one array
+
+public class OddEvenValue {
+public static void main(String[] args) {
+int[] array = {20,21,30,31,20,21,40,41,50,51,40,41,30};
+int evencount=0;
+int oddcount=0;
+for(int i=0;i<array.length;i++) {
+if(array[i]%2==0) {
+System.out.print(array[i]+" ");
+}
+}
+System.out.println();
+for(int i=0;i<array.length;i++) {
+if(array[i]%2!=0) {
+System.out.print(array[i]+" ");
+}
+}
+}
+
+-----------------------------------------------------------------------------------------------------------
+14.put even and odd in seperate array from one array
 
 public class PutOddEven {
 public static void main(String[] args) {
@@ -230,3 +251,16 @@ for(int i=0;i<oddArray.length;i++) {
 }
 }
 ---------------------------------------------------------------------------------------------------
+15. find negative value count
+
+public class NegativevalueCount {
+public static void main(String[] args) {
+int[] array = {20,21,-30,31,-20,21,-40,41,-50};
+int count=0;
+for(int i=0;i<array.length;i++) {
+if(array[i]<0)
+count++;
+}
+System.out.println("The Total count of negative values are:" +count);
+}
+}
