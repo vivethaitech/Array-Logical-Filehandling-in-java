@@ -1,109 +1,102 @@
 1.Merge two array in one array
 
 public class MergeArray {
-	public static void main(String[] args) {
-		int[] a= {10,20,30};
-		int[] b= {40,50,60};
-		int j=0;
-		int[] c = new int[a.length + b.length];
-		for(int i=0;i<c.length;i++) {
-			if(i<a.length) {
-				c[i]=a[i];
-			}
-			else
-			{
-				c[i]=b[j];
-				j++;
-			}
-		}
-			System.out.print(Arrays.toString(c));	
-	}
+public static void main(String[] args) {
+int[] a= {10,20,30};
+int[] b= {40,50,60};
+int j=0;
+int[] c = new int[a.length + b.length];
+for(int i=0;i<c.length;i++) {
+if(i<a.length) {
+c[i]=a[i];
 }
-
+else
+{
+c[i]=b[j];
+j++;
+}
+}
+System.out.print(Arrays.toString(c));	
+}
+}
+----------------------------------------------------------------------------------------
 2.Copy one array value into another array
 
 public class CopyArray {
-	public static void main(String[] args) {
-		int[] a= {10,20,30};
-	    int[] b= new int[a.length];
-	    
-	   for(int i=0;i<b.length;i++) {
-		   b[i]=a[i];
-		}
-			System.out.print(Arrays.toString(b));
-		
-	}
+public static void main(String[] args) {
+int[] a= {10,20,30};
+int[] b= new int[a.length];    
+for(int i=0;i<b.length;i++) {
+b[i]=a[i];
 }
-
+System.out.print(Arrays.toString(b));		
+}
+}
+----------------------------------------------------------------------------------------
 3.Delete one element in array
 
 public class DeleteElement {
-	public static void main(String[] args) {
-		int[] a = {10,20,30,40,50};
-		int pos = 3;
-		for(int i=pos-1;i<a.length-1;i++) {
-			a[i]=a[i+1];
-		}
-		for(int i=0;i<a.length-1;i++) {
-			System.out.print(a[i]+" ");
-		}
-		
-	}
+public static void main(String[] args) {
+int[] a = {10,20,30,40,50};
+int pos = 3;
+for(int i=pos-1;i<a.length-1;i++) {
+a[i]=a[i+1];
 }
-
+for(int i=0;i<a.length-1;i++) {
+System.out.print(a[i]+" ");
+}		
+}
+}
+------------------------------------------------------------------------------------------
 4.find duplicate element in array
 
 public class FindDuplicate {
-	public static void main(String[] args) {
-		int[] a = {10,20,30,40,50,20,30,40};
-		for(int i=0;i<a.length-1;i++) {
-			for(int j=i+1;j<a.length;j++) {
-				if(a[i]==a[j]) {
-					System.out.println("The duplicate : " +a[i]);
-				}
-				
-			}
-		}
-	}
+public static void main(String[] args) {
+int[] a = {10,20,30,40,50,20,30,40};
+for(int i=0;i<a.length-1;i++) {
+for(int j=i+1;j<a.length;j++) {
+if(a[i]==a[j]) {
+System.out.println("The duplicate : " +a[i]);
+}			
 }
-
+}
+}
+}
+-------------------------------------------------------------------------------------------
 5.Find the element in array
 
 public class FindElement {
-	public static void main(String[] args) {
-		int[] a = {10,20,30,40,50};
-		   int key = 30;
-		   for(int i=0;i<a.length;i++) {
-			   if(key==a[i]) {
-				   System.out.print("The index value of the key is "+i);
-			   }
-		   }
-				
-      }		
+public static void main(String[] args) {
+int[] a = {10,20,30,40,50};
+int key = 30;
+for(int i=0;i<a.length;i++) {
+if(key==a[i]) {
+System.out.print("The index value of the key is "+i);
 }
-
+}			
+}		
+}
+----------------------------------------------------------------------------------------------
 6.find unique value in array
 
 public class UniqueValue {
-	public static void main(String[] args) {
-		int[] array = {20,30,20,40,50,40,60};
-		for(int i=0;i<array.length;i++) {	
-			int count=0;
-			for(int j=0;j<array.length;j++) {
-				if(array[i]==array[j]) {
-					count++;
-				}
-				
-			}
-			if(count==1)
-			{
-				System.out.print(array[i]+" ");
-			}
+public static void main(String[] args) {
+int[] array = {20,30,20,40,50,40,60};
+for(int i=0;i<array.length;i++) {	
+int count=0;
+for(int j=0;j<array.length;j++) {
+if(array[i]==array[j]) {
+count++;
+}
+if(count==1)
+{
+System.out.print(array[i]+" ");
+}
 }		
 }
 }
 
-
+----------------------------------------------------------------------------------------------------
 7.find sum of array
 
 public class SumOfArray {
@@ -116,7 +109,7 @@ sum=sum+array[i];
 System.out.println("Sum of array is: "+sum);		
 }
 }
-
+------------------------------------------------------------------------------------------------------
 8.Find Negative value in Array
 
 public class NegativeValue {
@@ -130,7 +123,7 @@ System.out.print(array[i]+" ");
 }		
 }
 }
-
+-------------------------------------------------------------------------------------------------------
 9.Insert element in array
 
 public class Explore {
@@ -147,4 +140,35 @@ System.out.print(array[i] + " ");
 }
 }
 }
+--------------------------------------------------------------------------------------------------------
+10.Find maximum value of the array
+
+public class MaxValue {
+public static void main(String[] args) {
+int[] array = {20,30,20,40,50,40,60};
+int max=Integer.MIN_VALUE;
+for(int i=0;i<array.length;i++) {
+if(max<array[i]) {
+max=array[i];
+}	
+}
+System.out.print("Maximum value is: "+max);
+}
+}
+----------------------------------------------------------------------------------------------------------
+11.Find minimum value of the array
+
+public class MinValue {
+public static void main(String[] args) {
+int[] array = {20,30,20,40,50,40,60};
+int min=Integer.MAX_VALUE;
+for(int i=0;i<array.length;i++) {
+if(min>array[i]) {
+min=array[i];
+}	
+}
+System.out.print("Minimum value is: "+min);
+}
+}
+-----------------------------------------------------------------------------------------------------------
 
