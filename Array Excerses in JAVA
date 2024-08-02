@@ -170,5 +170,63 @@ min=array[i];
 System.out.print("Minimum value is: "+min);
 }
 }
------------------------------------------------------------------------------------------------------------
+----------------------------------------------------------------------------------------------------------
+12.find Odd and even count in one array
 
+public class OddEvenCount {
+public static void main(String[] args) {
+int[] array = {20,21,30,31,20,21,40,41,50,51,40,41,30};
+int evencount=0;
+int oddcount=0;
+for(int i=0;i<array.length;i++) {
+if(array[i]%2==0) {
+evencount++;
+}
+else if(array[i]%2!=0) {
+oddcount++;
+}
+}
+System.out.println("Total even count: "+evencount);
+System.out.println("Total even count: "+oddcount);
+}
+}
+-----------------------------------------------------------------------------------------------------------
+13.put even and odd in seperate array from one array
+
+public class PutOddEven {
+public static void main(String[] args) {
+int[] array = {20,21,30,31,20,21,40,41,50,51,40,41,30};
+int evencount=0;
+int oddcount=0;
+for(int i=0;i<array.length;i++) {
+if(array[i]%2==0) {
+evencount++;
+}
+else if(array[i]%2!=0) {
+oddcount++;
+}
+}
+int[] oddArray = new int[oddcount];
+int[] evenArray = new int[evencount];
+int oddIndex = 0;
+int evenIndex =0;
+for(int i=0;i<array.length;i++) {
+if(array[i]%2==0) {
+evenArray[evenIndex]=array[i];
+evenIndex++;
+}
+else {
+oddArray[oddIndex]=array[i];
+oddIndex++;
+}
+}
+for(int i=0;i<evenArray.length;i++) {
+System.out.print(evenArray[i]+" ");
+}
+System.out.println();
+for(int i=0;i<oddArray.length;i++) {
+	System.out.print(oddArray[i]+" ");
+}
+}
+}
+---------------------------------------------------------------------------------------------------
