@@ -385,4 +385,46 @@ j++;
 }
 }
 ----------------------------------------------------------------------------------------
+20. Rotate the array in Left direction
 
+public class LeftRotate {
+public static void main(String[] args) {
+int[] a = {1,2,3,4,5,6,7};
+int[] b= new int[a.length];
+int rotate=2;
+for(int i=0;i<a.length-rotate;i++) {
+b[i]=a[rotate+i];
+}
+int balance = a.length-rotate;
+int zero=0;
+for(int i=balance;i<a.length;i++) {
+b[i]=a[zero];
+zero++;
+}
+for(int i=0;i<b.length;i++) {
+System.out.print(b[i]+" ");
+}
+}
+}
+-------------------------------------------------------------------------------------------
+21.Rotate the array in Right direction
+
+public class RightRotate {
+public static void main(String[] args) {
+int[] a = {1,2,3,4,5,6,7};
+int[] b= new int[a.length];
+int rotate=2,zero=0;
+int balance = a.length-rotate;
+for(int i=rotate;i<a.length;i++) {
+b[i]=a[zero];
+zero++;
+}
+for(int i=0;i<rotate;i++) {
+b[i]=a[balance+i];
+}
+for(int i=0;i<b.length;i++) {
+System.out.print(b[i]+" ");
+}
+}
+}
+---------------------------------------------------------------------------------------------
