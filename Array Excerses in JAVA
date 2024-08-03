@@ -298,3 +298,91 @@ smax=array[i];
 System.out.println("The second maximum value is: "+smax);
 }
 }
+---------------------------------------------------------------------------------------------------------
+18.Find ascending or descending order in given array
+
+public class SortAscDesc {
+public static void main(String[] args) {
+int[] array = {20,2, 10, 6, 52, 31, 0, 45, 79, 40};
+
+//This part is to find ascending
+for (int i = 0; i < array.length - 1; i++) {
+for (int j = i + 1; j < array.length; j++) {
+if (array[i] > array[j]) {
+int temp = array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+}
+}
+
+for(int i=0;i<array.length;i++) {
+System.out.print(array[i]+" ");
+}
+
+}
+}
+-----------------------------------------------------------------------------------------------------------
+19.Sort even and odd number in array
+
+public class SortEvenOdd {
+
+public static void main(String[] args) {
+int[] array = {20,2, 10, 6, 52, 31, 0, 45, 79, 40};
+
+//This part is to find ascending
+for (int i = 0; i < array.length - 1; i++) {
+for (int j = i + 1; j < array.length; j++) {
+if (array[i] > array[j]) {
+int temp = array[i];
+array[i]=array[j];
+array[j]=temp;
+}
+}
+}
+
+//this part is to find total even count and odd count
+int evencount=0,oddcount=0;
+for(int i=0;i<array.length;i++) {
+if(array[i]%2==0) {
+evencount++;
+}
+else if(array[i]%2!=0) {
+oddcount++;
+}
+}
+
+//we going to create two array for both odd and even
+int[] evenArray = new int[evencount];
+int[] oddArray = new int[oddcount];
+int evenindex=0;
+int oddindex=0;
+for(int i=0;i<array.length;i++) {
+if(array[i]%2==0) {
+evenArray[evenindex]=array[i];
+evenindex++;
+}
+else {
+oddArray[oddindex]=array[i];
+oddindex++;
+}
+}
+
+//merging both even and odd array in single array
+int j=0;
+int[] sortArray = new int[array.length];
+for(int i =0;i<array.length;i++) {
+if(i<evenArray.length) {
+sortArray[i]=evenArray[i];
+System.out.print(sortArray[i]+" ");
+}
+else {
+sortArray[i]=oddArray[j];
+System.out.print(sortArray[i]+" ");
+j++;
+}
+}
+}
+}
+----------------------------------------------------------------------------------------
+
