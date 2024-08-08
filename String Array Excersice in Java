@@ -47,3 +47,29 @@ System.out.println("ends with");
 }
 }
 }
+
+3.trim() method
+
+public class Pactice {
+public static void main(String[] args) {
+String s1 = "    Stay happy, stay unwinded, stay focused and creative  ";
+char[] ch =s1.toCharArray();
+int first=0;
+for(int i=0;i<ch.length;i++) {
+if(ch[i]!=' ') {
+first=i;
+break;
+}
+}
+int last=0;
+for(int i=ch.length-1;i>0;i--) {
+if(ch[i]!=' ') {
+last=i;
+break;
+}
+}
+for(int i=first;i<=last;i++) {
+System.out.print(ch[i]);
+}
+}
+}
