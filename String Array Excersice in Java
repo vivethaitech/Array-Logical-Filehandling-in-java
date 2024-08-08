@@ -1,1 +1,49 @@
+1. startsWith() method 
 
+public class Starts {
+public static void main(String[] args) {
+String s1 = "Stay happy, stay unwinded, stay focused and creative";
+String s2 = "Stay";
+char[] c1 = s1.toCharArray();
+char[] c2 = s2.toCharArray();
+boolean starts = true;
+for(int i=0,j=0; j<c2.length; i++,j++) {
+if(c1[i]==c2[j]) {
+continue;
+}
+else {
+starts=false;
+System.out.println("Not starts with");
+break;
+}
+}
+if(starts) {
+System.out.println("Starts with");
+}
+}
+}
+
+2. endsWith() method
+
+public class Ends {
+public static void main(String[] args) {
+String s1 = "Stay happy, stay unwinded, stay focused and creative";
+String s2 = "creative";
+char[] c1 = s1.toCharArray();
+char[] c2 = s2.toCharArray();
+boolean ends = true;
+for(int i=c1.length-1,j=c2.length-1;j>=0;i--,j--) {
+if(c1[i]==c2[j]) {
+continue;
+}
+else {
+ends=false;
+System.out.println("Not ends with");
+break;
+}
+}
+if(ends) {
+System.out.println("ends with");
+}
+}
+}
