@@ -50,7 +50,7 @@ System.out.println("ends with");
 
 3.trim() method
 
-public class Pactice {
+public class Trim {
 public static void main(String[] args) {
 String s1 = "    Stay happy, stay unwinded, stay focused and creative  ";
 char[] ch =s1.toCharArray();
