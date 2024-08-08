@@ -1,0 +1,21 @@
+1. How to create folder
+public class FolderCreation {
+public static void main(String[] args) {		
+File file = new File("//home//vivetha//Desktop//FileIopractice//vivetha");
+boolean present = file.exists();
+System.out.println("IS file already present? "+present);
+if(present==false)
+file.mkdir();
+}
+}
+----------------------------------------------------------------
+2. How to create sub folder
+public class SubFolder {
+public static void main(String[] args) {		
+File file = new File("//home//vivetha//Desktop//FileIopractice//vivetha//vivethasub//vivethasubofsub");
+boolean present = file.exists();
+System.out.println("IS file already present? "+present);
+if(present==false)
+file.mkdirs();
+}
+}
