@@ -1,0 +1,35 @@
+1. Fibonacci series
+
+public class Fibonacci {
+public static void main(String[] args) {
+int n1=0;
+int n2=1;
+System.out.print(n1+" "+n2);
+for(int i=2;i<10;i++) {
+int n3=n1+n2;
+System.out.print(" "+n3);
+n1=n2;
+n2=n3;
+}
+}
+}
+
+2.Palindrome Check
+
+public class Palindrome {
+public static void main(String[] args) {
+int no = 10201;
+int no2=no;
+int rev=0;
+while(no>0) {
+rev =(rev*10)+ no%10;
+no=no/10;
+}
+if(rev==no2) {
+System.out.println("The no is palindrome");
+}
+else {
+System.out.println("The no is not palindrome");
+}
+}
+}
