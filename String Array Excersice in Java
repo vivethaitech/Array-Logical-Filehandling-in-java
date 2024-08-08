@@ -73,3 +73,36 @@ System.out.print(ch[i]);
 }
 }
 }
+
+4.stripLeading() method
+
+public class Leading {
+public static void main(String[] args) {
+String s1 = "    Stay happy, stay unwinded, stay focused and creative";
+for(int i=0;i<s1.length();i++) {
+if(s1.charAt(i)!=' ') {
+for(int j=i;j<s1.length();j++) {
+System.out.print(s1.charAt(j));
+}
+break;
+}
+}
+}
+}
+
+5.stripTrailing() method
+
+public class Trailing {
+public static void main(String[] args) {
+String s1 = "Stay happy, stay unwinded, stay focused and creative       ";
+for(int i=s1.length()-1;i>0;i--) {
+if(s1.charAt(i)!=' ') {
+for(int j=0;j<=i;j++) {
+System.out.print(s1.charAt(j));
+}
+break;
+}
+}
+}
+}
+
