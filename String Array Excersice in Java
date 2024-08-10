@@ -106,3 +106,19 @@ break;
 }
 }
 
+6.reverse() method
+
+public class Reverse{
+public static void main(String[] args){
+String str = "vivetha";
+char[] ch = str.toCharArray();
+char[] ch2 = new char[ch.length];
+for(int i=0;i<ch.length;i++)
+{
+ch2[i]=ch[ch.length-1-i];
+}
+for(int i=0;i<ch2.length;i++){
+System.out.print(ch2[i]);
+}
+}
+}
