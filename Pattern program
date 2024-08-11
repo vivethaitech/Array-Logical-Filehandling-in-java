@@ -104,4 +104,129 @@ output:
 1234
 12345
 -----------------------------------------------------------------
+6. Inverted Triangle pattern using *
+
+public class RightAngleTriangle {
+
+public static void main(String[] args) {
+for(int row=5;row>=1;row--) {
+for(int col=1;col<=row;col++) {
+System.out.print("* ");
+}
+System.out.println();
+}
+}
+}
+
+output:
+* * * * * 
+* * * * 
+* * * 
+* * 
+* 
+------------------------------------------------------------
+7. Inverted Triangle by printing row
+
+public class RightAngleTriangle {
+
+public static void main(String[] args) {
+for(int row=5;row>=1;row--) {
+for(int col=1;col<=row;col++) {
+System.out.print(row);
+}
+System.out.println();
+}
+}
+}
+output:
+55555
+4444
+333
+22
+1
+--------------------------------------------------------------
+8. Inverted Triangle by printing column
+
+public class RightAngleTriangle {
+
+public static void main(String[] args) {
+for(int row=5;row>=1;row--) {
+for(int col=1;col<=row;col++) {
+System.out.print(col);
+}
+System.out.println();
+}
+}
+}
+
+output:
+12345
+1234
+123
+12
+1
+-----------------------------------------------------------------
+9. pyramid Pattern
+public class PyramidPattern {
+public static void main(String[] args) {
+int n = 5; // Number of rows for the pyramid       
+for (int i = 1; i <= n; i++) {
+for (int j = i; j < n; j++) {
+System.out.print("  ");
+}
+for (int k = 1; k <= (2 * i - 1); k++) {
+System.out.print("@ ");
+}
+System.out.println();
+}
+}
+}
+
+output:
+        @ 
+      @ @ @ 
+    @ @ @ @ @ 
+  @ @ @ @ @ @ @ 
+@ @ @ @ @ @ @ @ @
+---------------------------------------------------------------------
+10. Diamond Pattern
+
+public class Diamond {
+public static void main(String[] args) {
+int n = 5; // Number of rows for the pyramid       
+for (int i = 1; i <= n; i++) {
+for (int j = i; j < n; j++) {
+System.out.print("  ");
+}
+for (int k = 1; k <= (2 * i - 1); k++) {
+System.out.print("@ ");
+}
+System.out.println();
+}
+for (int i = n - 1; i >= 1; i--) {
+for (int j = n; j > i; j--) {
+System.out.print("  ");
+}
+for (int k = 1; k <= (2 * i - 1); k++) {
+System.out.print("@ ");
+}
+System.out.println();
+}
+}   
+}
+
+output:
+        @ 
+      @ @ @ 
+    @ @ @ @ @ 
+  @ @ @ @ @ @ @ 
+@ @ @ @ @ @ @ @ @ 
+  @ @ @ @ @ @ @ 
+    @ @ @ @ @ 
+      @ @ @ 
+        @ 
+
+
+
+
 
