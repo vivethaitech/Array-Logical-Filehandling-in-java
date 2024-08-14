@@ -47,4 +47,19 @@ System.out.print(a[i]+" ");
 }
 }
 ------------------------------------------------------------------------------------
+3. Linear Search
+
+public class LinearSearch {
+
+public static void main(String[] args) {
+int[] a = {10,50,78,88,99};
+int key = 78;
+for(int i=0;i<a.length;i++) {
+if(a[i]==key) {
+System.out.println("key value "+key+" is present in "+i);
+}
+}
+}
+}
+--------------------------------------------------------------------------------------
 
