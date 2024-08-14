@@ -1,0 +1,29 @@
+1. Binary Search
+
+public class BInarySearch {
+
+	public static void main(String[] args) {
+		int[] a = {10,30,40,56,67,75,82,88,90};
+		int min=0,max=a.length-1;
+		int key = 56;
+		while(min<=max)
+		{
+			int mid = (min+max)/2;
+			if(key==a[mid]) {
+				System.out.println("Iam in " +mid);
+				break;
+			}
+			else if(key<a[mid]) {
+				max=mid-1;
+			}
+			else {
+				min=mid+1;
+			}
+		}
+
+	}
+
+}
+----------------------------------------------------------------------------------
+2. Bubble Sort
+
