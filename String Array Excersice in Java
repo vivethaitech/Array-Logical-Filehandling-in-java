@@ -105,7 +105,7 @@ break;
 }
 }
 }
-
+---------------------------------------------------------------------------------
 6.reverse() method
 
 public class Reverse{
@@ -122,3 +122,32 @@ System.out.print(ch2[i]);
 }
 }
 }
+----------------------------------------------------------------------------------
+7. Anagram 
+
+public class Anagram {
+
+public static void main(String[] args) {
+		
+String word1 = "pool";
+String word2 = "loop";
+char[] ch1 = word1.toCharArray();
+char[] ch2 = word2.toCharArray();
+int count = 0;
+for(int j=0;j<word2.length();j++) {
+for(int i=0;i<word1.length();i++) {
+if(ch2[j]==ch1[i]) {
+ch1[i]='*';
+count++;
+}
+}
+}
+if(count==word1.length() && word1.length()==word2.length()) {
+System.out.println("Yes, It is anagram");
+}
+else {
+System.out.println("No, It is not anagram");
+}
+}
+}
+---------------------------------------------------------------------------------------
