@@ -22,7 +22,7 @@ System.out.println("Starts with");
 }
 }
 }
-
+----------------------------------------------------------------------------------
 2. endsWith() method
 
 public class Ends {
@@ -47,7 +47,7 @@ System.out.println("ends with");
 }
 }
 }
-
+----------------------------------------------------------------------------------
 3.trim() method
 
 public class Trim {
@@ -73,7 +73,7 @@ System.out.print(ch[i]);
 }
 }
 }
-
+-------------------------------------------------------------------------------
 4.stripLeading() method
 
 public class Leading {
@@ -89,7 +89,7 @@ break;
 }
 }
 }
-
+------------------------------------------------------------------------------
 5.stripTrailing() method
 
 public class Trailing {
@@ -151,3 +151,68 @@ System.out.println("No, It is not anagram");
 }
 }
 ---------------------------------------------------------------------------------------
+8. convert to upperCase
+public class UpperCaseArray {
+
+public static void main(String[] args) {
+String name = "vivetha";
+char ch[] = name.toCharArray();
+for(int i=0; i<name.length();i++){
+if(ch[i]>='a' && ch[i]<='z')
+{
+System.out.print((char)(ch[i]-32));
+}
+else{
+System.out.print(ch[i]);
+}
+}
+}
+}
+----------------------------------------------------------------------------------------
+9. convert to lowercase
+
+public class LowerCaseArray {
+
+public static void main(String[] args) {
+String name = "POPpy";
+char[] ch = name.toCharArray();
+for(int i=0;i<name.length();i++) {
+if(ch[i]>='A' && ch[i] <='Z') {		
+System.out.print((char)(ch[i]+32));
+}
+else {
+System.out.print((char)(ch[i]-0));
+}
+}						
+}
+}
+---------------------------------------------------------------------------------------
+10. vowels and constant count
+
+public class VowelCons {
+
+public static void main(String[] args) {
+String name = "vivetha";
+char[] ch = name.toCharArray();
+int vowels=0;
+int constant=0;
+char low;	
+for (int i = 0; i < name.length(); i++) {
+if (ch[i] >= 'A' && ch[i] <= 'Z') { 
+low = (char)(ch[i] + 32);
+} else {
+low = ch[i];
+}
+System.out.print(low);
+if (low == 'a' || low == 'e' || low == 'i' || low == 'o' || low == 'u') {
+vowels++;
+} else {
+constant++;  
+}
+}
+System.out.println();
+System.out.println("Total vowel counts are: "+vowels);
+System.out.println("Total constant counts are: "+constant);
+}
+}
+-----------------------------------------------------------------------------------------
