@@ -44,3 +44,68 @@ System.out.println("The no is not palindrome");
 }
 }
 }
+
+chat GPT recommended interview Question
+
+1. Star Patterns
+
+    Pyramid Pattern: Print a pyramid of stars.
+    Right-Angle Triangle: Print a right-angle triangle using stars.
+    Inverted Triangle: Print an inverted right-angle triangle.
+    Diamond Pattern: Print a diamond shape using stars.
+    Square Pattern: Print a hollow square or solid square using stars.
+
+2. Number Patterns
+
+    Pyramid of Numbers: Print a pyramid of numbers, where each row contains the same number.
+    Floyd’s Triangle: Print Floyd's triangle with increasing numbers.
+    Pascal’s Triangle: Print Pascal's triangle.
+    Inverted Number Pyramid: Print an inverted number pyramid.
+    Spiral Matrix: Fill a matrix in a spiral order with consecutive numbers.
+
+3. Alphanumeric Patterns
+
+    Alphabet Triangle: Print a triangle of alphabets, where each row contains the same letter.
+    Increasing Alphabet Pyramid: Print a pyramid with increasing alphabets.
+    Palindrome Pyramid: Print a palindrome pattern using numbers or alphabets.
+    Zig-Zag Pattern: Print a zig-zag pattern with numbers or stars.
+
+4. Series and Sequence
+
+    Fibonacci Series: Print the Fibonacci series up to n terms.
+    Prime Numbers: Check if a number is prime and print prime numbers within a range.
+    Armstrong Number: Check if a number is an Armstrong number.
+    Perfect Number: Determine if a number is a perfect number.
+    Factorial: Calculate the factorial of a number.
+
+5. Array and Matrix Programs
+
+    Matrix Addition: Perform addition of two matrices.
+    Matrix Multiplication: Perform multiplication of two matrices.
+    Transpose of Matrix: Find the transpose of a given matrix.
+    Array Rotation: Rotate the elements of an array (left rotation, right rotation).
+    Find Duplicates: Find and remove duplicates from an array.
+
+6. String Manipulation
+
+    Palindrome Check: Check if a given string is a palindrome.
+    Anagram Check: Check if two strings are anagrams of each other.
+    String Reverse: Reverse a given string.
+    Count Vowels and Consonants: Count the number of vowels and consonants in a string.
+    String Compression: Implement basic string compression (e.g., "aabcccccaaa" becomes "a2b1c5a3").
+
+7. Mathematical Programs
+
+    LCM and GCD: Find the Least Common Multiple (LCM) and Greatest Common Divisor (GCD) of two numbers.
+    Sum of Digits: Find the sum of digits of a number.
+    Decimal to Binary Conversion: Convert a decimal number to binary.
+    Base Conversion: Convert a number from one base to another.
+    Factorial Using Recursion: Calculate the factorial using recursion.
+
+8. Miscellaneous
+
+    Tower of Hanoi: Solve the Tower of Hanoi problem using recursion.
+    N-Queens Problem: Solve the N-Queens problem using backtracking.
+    Find Missing Number: Find the missing number in a sequence of integers.
+    Snake Pattern Matrix: Print a matrix in a snake-like pattern.
+    Magic Square: Generate and print a magic square.
