@@ -216,3 +216,58 @@ System.out.println("Total constant counts are: "+constant);
 }
 }
 -----------------------------------------------------------------------------------------
+11. ReplaceAll() method 
+
+public class ReplaceAll {
+
+public static void main(String[] args) {
+		
+String phrase = "love is art";
+String target = "art";
+String replacement = "poem";
+String result = "";
+for(int i=0;i<phrase.length();i++) {
+boolean match = true;
+for(int j=0;j<target.length();j++) {
+if(phrase.charAt(i+j)!=target.charAt(j)) {
+match = false;
+break;
+}
+}
+if(match) {
+result+=replacement;
+i=i+target.length()-1;
+}
+else {
+result +=phrase.charAt(i);
+}
+}
+System.out.print(result);
+}
+}
+-------------------------------------------------------------------------------------
+12.Contains() method
+
+public class ContainsArray {
+
+public static void main(String[] args) {
+String str1 = "love is art";
+String str2 = "art";		
+int count=0;
+for(int i=0;i<str1.length();i++) {
+for(int j=0;j<str2.length();j++) {
+if(str1.charAt(i+j)!=str2.charAt(j)) {
+break;
+}
+count++;
+}   
+}
+if(count==str2.length()) {
+System.out.println("yes, the word "+str2+" is in pharse");
+}
+else {
+System.out.println("No, the word "+str2+" is not in pharse");
+}
+}
+}
+-------------------------------------------------------------------------------------
