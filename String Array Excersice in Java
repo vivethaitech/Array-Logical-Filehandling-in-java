@@ -271,3 +271,24 @@ System.out.println("No, the word "+str2+" is not in pharse");
 }
 }
 -------------------------------------------------------------------------------------
+13. Palindrome in string
+
+public class Explore {
+public static void main(String[] args) {
+String word ="madam";
+String originalWord = word;
+char[] ch = word.toCharArray();
+char[] revCh = new char[ch.length];
+for(int i=0;i<ch.length;i++) {
+revCh[i]=ch[ch.length-1-i];
+}
+String arr = new String(revCh);
+if(originalWord.equals(arr)) {
+System.out.println("palindrome");
+}
+else {
+System.out.println("Not a palindrome");
+}
+}
+}
+----------------------------------------------------------------------------------------
