@@ -22,4 +22,21 @@ maxFreqNum=entry.getKey();
 System.out.println("The max frequency is "+maxFreqNum+" that total frequency is "+max);
 }
 }
---------------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------
+2.Remove duplicates from a List of integers using a Set.
+
+public class RemovedDuplicates {
+public static void main(String[] args) {
+ArrayList<Integer> al = new ArrayList<>();
+al.add(10);
+al.add(20);
+al.add(30);
+al.add(10);
+al.add(40);
+System.out.println("Array list with duplicates"+al);
+LinkedHashSet<Integer> hs = new  LinkedHashSet<>();
+hs.addAll(al);
+System.out.println("removed Duplicates using set"+hs);
+}
+}
+---------------------------------------------------------------------------------------------
