@@ -1,0 +1,58 @@
+1.Swap two numbers
+
+public class SwapNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter two number");
+		int a = sc.nextInt();
+		int b = sc.nextInt();
+		System.out.println("Before swapping");
+		System.out.println(a+" "+b);
+		a=a+b;
+		b=a-b;
+		a=a-b;
+		System.out.println("After swapping");
+		System.out.println(a+" "+b);
+
+	}
+
+}
+--------------------------------------------------------------------
+2.factorial of number
+
+public class FactorialNum {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number to find factorial");
+		int num = sc.nextInt();
+		int fact=1;
+		for(int i=num;i>0;i--) {
+		fact=fact*i;	
+		}
+        System.out.println("factorial of "+num+" is :"+fact);
+	}
+
+}
+---------------------------------------------------------------------
+3.Simple Interest
+
+public class SimpleInterest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Amount");
+		int amount = sc.nextInt();
+		System.out.println("Enter rate percent of interest");
+		float rate = sc.nextInt();
+		System.out.println("Enter year ");
+		float year = sc.nextInt();
+		float SI = (amount*rate*year)/100;
+		System.out.println("The Simple Interest is :"+SI);
+		
+	}
+
+}
+--------------------------------------------------------------------
