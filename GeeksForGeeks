@@ -75,3 +75,22 @@ public class Fibonacci {
 	}
 }
 ---------------------------------------------------------------------
+5.Integer to Binary
+
+public class IntegerToBinary {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number");
+		int no = sc.nextInt();
+		String binary=" ";
+		while(no>0) {
+		binary=(no%2)+binary;
+		 no = no/2;	
+		}
+		System.out.println("Binary Number : "+binary);
+         
+	}
+}
+------------------------------------------------------------------------
+---------------------------------------------------------------------
