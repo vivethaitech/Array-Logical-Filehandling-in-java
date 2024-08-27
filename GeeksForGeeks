@@ -93,4 +93,28 @@ public class IntegerToBinary {
 	}
 }
 ------------------------------------------------------------------------
----------------------------------------------------------------------
+6.Add two complex number
+
+public class AddComplexNum {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter the first complex number");
+		String number1 = sc.next();
+		System.out.println("enter the second complex number");
+		String number2 = sc.next();
+		
+		int real1 = Integer.parseInt(number1.substring(0, number1.indexOf("+")));
+		int real2 = Integer.parseInt(number2.substring(0, number2.indexOf("+")));
+		int complex1=Integer.parseInt(number1.substring(number1.indexOf("+")+1,number1.indexOf("i")));
+		int complex2=Integer.parseInt(number2.substring(number2.indexOf("+")+1,number1.indexOf("i")));
+		
+		int sumReal = real1+real2;
+		int sumComplex=complex1+complex2;
+		
+		System.out.println(sumReal+"+"+sumComplex+"i");
+	}
+}
+-----------------------------------------------------------------------------
