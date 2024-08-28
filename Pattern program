@@ -247,4 +247,103 @@ output:
 7 8 9 10 
 11 12 13 14 15 
 ---------------------------------------------------------------------
+12.perfect triangle
 
+public class Triangle {
+
+public static void main(String[] args) {
+		
+for(int i=1;i<=5;i++) {
+for(int j=1;j<=5-i;j++) {
+System.out.print(" ");
+}
+for(int k=1;k<=i;k++) {
+System.out.print("@ ");
+}
+System.out.println();
+}
+}
+}
+Output:
+    @ 
+   @ @ 
+  @ @ @ 
+ @ @ @ @ 
+@ @ @ @ @ 
+---------------------------------------------------------------------
+13.perfect triangle (1 to n)
+
+public class NumberTriangle {
+
+public static void main(String[] args) {
+int num=1;		
+for(int i=1;i<=5;i++) {
+for(int j=1;j<=5-i;j++) {
+System.out.print("  ");
+}
+for(int k=1;k<=i;k++) {
+System.out.print(num+"  ");
+num++;
+}
+System.out.println();
+}
+}
+}
+
+output:
+        1  
+      2  3  
+    4  5  6  
+  7  8  9  10  
+11  12  13  14  15  
+-------------------------------------------------------------------------
+14.number triangle pattern
+
+public class NumberTriangle {
+
+public static void main(String[] args) {
+for(int i=1;i<=5;i++) {
+for(int j=1;j<=5-i;j++) {
+System.out.print(" ");
+}
+for(int k=1;k<=i;k++) {
+System.out.print(i+" ");
+}
+System.out.println();
+}
+}
+}
+
+output:
+    1 
+   2 2 
+  3 3 3 
+ 4 4 4 4 
+5 5 5 5 5 
+-----------------------------------------------------------------------------
+15.Palindrome Triangle 
+
+public class PalindromeTriangle {
+
+public static void main(String[] args) {
+for(int i=1;i<=5;i++) {
+for(int j=1;j<=2*(5-i);j++){
+System.out.print(" ");
+}
+for(int k=i;k>=1;k--) {
+System.out.print(k+" ");
+}
+for(int k=2;k<=i;k++) {
+System.out.print(k+" ");
+}
+System.out.println();
+}
+}
+}
+
+output:
+        1 
+      2 1 2 
+    3 2 1 2 3 
+  4 3 2 1 2 3 4 
+5 4 3 2 1 2 3 4 5 
