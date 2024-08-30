@@ -1,0 +1,57 @@
+1.find largest in each testcase 
+
+public class LargestArray {
+
+	public static void main(String[] args) {
+	       Scanner sc = new Scanner(System.in);
+	        int T = sc.nextInt(); 
+	        
+	        for (int j = 0; j < T; j++) {
+	            int n = sc.nextInt(); 
+	            int max = Integer.MIN_VALUE; 
+	            
+	       
+	            for (int i = 0; i < n; i++) {
+	                int height = sc.nextInt();
+	                if (height > max) {
+	                    max = height; 
+	                }
+	            }
+	            
+	  
+	            System.out.println(max);
+	        }
+	        
+	        sc.close();
+	}
+
+}
+---------------------------------------------------------------------------------------------------------------
+2.scan size of number and scan exact number you want to check exist or not and scan the number from user as size
+
+public class NumberExist {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		   Scanner scanner = new Scanner(System.in);
+	        int N = scanner.nextInt();
+	        int X = scanner.nextInt();
+	        
+	        boolean found = false; 
+	        for (int i = 0; i < N; i++) {
+	            int element = scanner.nextInt();
+	            if (element == X) {
+	                found = true;
+	                break;
+	            }
+	        }
+	        
+	        if (found) {
+	            System.out.println("YES");
+	        } else {
+	            System.out.println("NO");
+	        }
+	}
+
+}
+-----------------------------------------------------------------------------------------------------------------
