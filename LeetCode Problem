@@ -1,0 +1,18 @@
+1.find the string's last word and its count
+public class LastWordLength {
+	
+	public static void main(String[] args) {
+
+		System.out.println(LastWordLength("India is my country "));
+    
+	}
+	public static int LastWordLength(String s) {
+		s=s.trim();
+		String[] words=s.split(" ");
+		for(String word:words)
+		System.out.print(word+",");
+	    int length=words[words.length-1].length();
+	    return length;
+	}
+}
+---------------------------------------------------------------
