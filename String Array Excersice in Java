@@ -310,3 +310,35 @@ System.out.println("no continous letters");
 }
 }
 }
+-------------------------------------------------------------------------------------------
+15.Continuous occurence find program
+   ---------------------------------
+public static void main(String[] args) {
+String name ="chennai";
+for(int i=0;i<name.length()-1;i++) {
+if(name.charAt(i)==name.charAt(i+1)) {
+System.out.println(name.charAt(i)+" occured contimously two times ");
+}
+}
+}
+Continuous occurence find program with method calling
+----------------------------------------------------
+public class CountOccuranceFunction {
+public static void main(String[] args) {
+String name ="chennai";
+char output=countOccur(name);
+if(output!='\0')
+System.out.println(output+ " occured two times continuously");
+else
+System.out.println("No character found");
+}
+public static char countOccur(String name) {
+for(int i=0;i<name.length()-1;i++) { 
+if(name.charAt(i)==name.charAt(i+1)) {
+return name.charAt(i);			
+}
+}
+return '\0'; 		
+}
+}
+--------------------------------------------------------------------------------------------
