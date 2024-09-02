@@ -13,7 +13,7 @@ n2=n3;
 }
 }
 }
-
+---------------------------------------------------------------------
 2.Palindrome Check
 
 public class Palindrome {
@@ -33,3 +33,31 @@ System.out.println("The no is not palindrome");
 }
 }
 }
+------------------------------------------------------------------------
+3.Prime Number Check
+public class Prime {
+public static void main(String[] args) {
+	int no=0;
+	boolean prime = true;
+	if(no<2) {
+		prime=false;
+	}else {
+	for(int i=2;i<no;i++)
+	{   
+		if(no%2==0)
+		{
+			prime=false;
+			break;
+		}
+	}
+	}
+	if(prime)
+	{
+		System.out.println("no is prime number");
+	}
+	else {
+		System.out.println("no is not prime number");
+	}
+}
+}
+------------------------------------------------------------------------
