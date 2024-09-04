@@ -143,4 +143,68 @@ OUTPUT:
 			   return false;
 	}
 }
-  -------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
+6.Largest Number in array
+
+public class LargestArray {
+
+	public static void main(String[] args) {
+		LargestArray l = new LargestArray();
+		int[] array= {10,20,30,70,80,10};
+		System.out.println(l.findLargest(array));
+
+	}
+
+	public int findLargest(int[] array) {
+		int max=Integer.MIN_VALUE;
+	    for(int i=0;i<array.length;i++) {
+	    	if(array[i]>max) {
+	    		max=array[i];
+	    	}
+	    }
+	    return max;
+	}
+}
+-------------------------------------------------------------------------------------
+7. prime number check
+
+public class PrimeCheck {
+
+	public static void main(String[] args) {
+		PrimeCheck pc = new PrimeCheck();
+		boolean result = pc.isPrime(41);
+		System.out.println(result);
+
+	}
+	
+	public boolean isPrime(int number) {
+		boolean prime=true;
+	    if(number<=1) {
+	    	prime=false;
+	    }
+	    for(int i=2;i<number;i++) {
+		if(number%i==0){
+			prime=false;
+		}
+	    }
+	    return true;
+	}
+
+}
+-----------------------------------------------------------------------------------
+8.Factorial using recursion
+
+public class FactorialRecursion {
+	public static void main(String[] args) {
+		FactorialRecursion fact = new FactorialRecursion();
+		System.out.println(fact.factorial(5));
+		
+	}
+	public int factorial(int n) {
+		if(n==0||n==1){
+			return 1;
+		}
+		return n * factorial(n-1);
+	}
+
+}
