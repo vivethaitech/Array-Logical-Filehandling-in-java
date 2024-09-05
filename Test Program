@@ -208,3 +208,101 @@ public class FactorialRecursion {
 	}
 
 }
+-----------------------------------------------------------------------------------
+9. Vowel and constant count
+
+public class VowelsConstant {
+
+	public static void main(String[] args) {
+	  String name ="ViVeTHA";
+      int vcount=0,ccount=0;
+      name=name.toLowerCase();
+      for(int i=0;i<name.length();i++) {
+    	  char c= name.charAt(i);
+    	  if(c=='a'||c=='e'||c=='i'||c=='o'||c=='u') {
+    		  vcount++;
+    	  } else if(c >='a' && c <='z'){
+    		  ccount++;
+    	  }
+      }
+      System.out.println("Total vowel counts are "+vcount);
+      System.out.println("Total constant counts are "+ccount);
+	}
+
+}
+-------------------------------------------------------------------------------------
+10. Swap two number without temp
+
+public class SwapWithoutTemp {
+
+	public static void main(String[] args) {
+		int a=5,b=3;
+		System.out.println("Before swap: a is "+a+" b is "+b);
+        a = a+b;
+        b=a-b;
+        a=a-b;
+        System.out.println("after swap: a is "+a+" b is "+b);
+	}
+
+}
+--------------------------------------------------------------------------------------
+11. second largest number in array
+
+public class SecondLargest {
+
+	public static void main(String[] args) {
+		
+		int[] arr = {10,15,12,19,11};
+		int max=Integer.MIN_VALUE;
+		int smax=Integer.MIN_VALUE;
+		
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]>max) {
+				smax=max;
+				max=arr[i];
+				
+			}
+			else if(arr[i]>smax && arr[i]!=max) {
+				smax=arr[i];
+			}
+		}
+        System.out.println(smax);
+	}
+
+}
+--------------------------------------------------------------------------------------
+12. Reverse Number
+
+public class ReverseNumber {
+
+	public static void main(String[] args) {
+		int input=12345;
+		int rev=0;
+		while(input>0) {
+		rev=rev*10+input%10;
+		input=input/10;	
+		}
+		System.out.println(rev);
+	}
+}
+------------------------------------------------------------------------------------
+13. Palindrome Number
+
+public class PalindromeNumber {
+	public static void main(String[] args) {
+		int input=121;
+		int original=input;
+		int rev=0;
+		while(input>0) {
+		rev=rev*10+input%10;
+		input=input/10;	
+		}
+		if(rev==original) {
+			System.out.println("palindrome");
+		}
+		else {
+			System.out.println("not palindrome");
+		}
+	}
+}
+----------------------------------------------------------------------------------------
