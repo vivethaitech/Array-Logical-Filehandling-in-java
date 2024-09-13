@@ -119,3 +119,38 @@ class HelloWorld {
     }
 }
 -------------------------------------------------------------------------------------------------------------
+4.count string occurence 
+----------using normal array--------------
+class HelloWorld {
+    public static void main(String[] args) {
+        String str ="Java is fun and Java is powerful";
+        String[] s = str.split(" ");
+        for(int i=0;i<s.length;i++){
+            int count=1;
+            for(int j=i+1;j<s.length;j++){
+                if(s[i].equals(s[j])){
+                    count++;
+                    s[j]="*";
+                }
+            }
+             if(s[i]!="*"){
+                System.out.print(s[i]+"="+count+" ");
+            } 
+        }
+     
+    }
+}
+---------------using map---------------------
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        String str ="Java is fun and Java is powerful";
+        String[] s = str.split(" ");
+        Map<String,Integer> m = new HashMap<>();
+        for(String st:s){
+             m.put(st,m.getOrDefault(st,0)+1);
+            }
+            System.out.println(m);
+        }
+ }
+------------------------------------------------------------------------------------------------------------------
