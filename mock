@@ -52,3 +52,70 @@ class rotate {
     }
 }
 ----------------------------------------------------------------
+3. First Non repeating character
+---------------using boolean----------------
+public class SingleUnique {
+
+	public static void main(String[] args) {
+		String str="swiss";
+		char[] ch = str.toCharArray();
+		
+		for(int i=0;i<ch.length-1;i++) {
+			boolean found=true;
+			for(int j=i+1;j<ch.length;j++) {
+				if(ch[i]==ch[j]) {
+					found=false;
+				}
+			}
+			if(found) {
+				System.out.println(ch[i]+" ");
+				break;
+			}
+		}
+
+	}
+
+}
+------------using count--------------------
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="swiss";
+        char[] ch = str.toCharArray();//s w i s s
+        for(int i=0;i<ch.length-1;i++){
+            int count=1;
+            for(int j=i+1;j<ch.length;j++){
+                if(ch[i]==ch[j])
+                count++;
+            }
+            if(count==1){
+                System.out.print(ch[i]+" ");
+            }
+        }
+       
+    }
+}
+---------------using map----------------------
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="swiss";
+        char[] ch = str.toCharArray();//s w i s s
+        Map<Character,Integer> m = new HashMap<>();
+        for(char c:ch){
+        if(m.containsKey(c)){
+            m.put(c,m.get(c)+1);
+        }
+        else{
+            m.put(c,1);
+        }
+        }
+        System.out.println(m);
+       for(Map.Entry<Character,Integer> e:m.entrySet()){
+           if(e.getValue()==1){
+               System.out.println(e.getKey());
+               break;
+           }
+       }
+    }
+}
+-------------------------------------------------------------------------------------------------------------
