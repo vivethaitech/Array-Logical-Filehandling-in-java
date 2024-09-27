@@ -1,0 +1,64 @@
+while based program
+
+1. class SumOfDigits {
+    public static void main(String[] args) {
+               int no=123;
+               System.out.println(sumDigit(no));
+    }
+public static int sumDigit(int n){
+       int sum=0;
+       while(n!=0){
+           int rem = n%10;
+           sum=sum+rem;
+           n=n/10;
+       }
+       return sum;
+    }
+}
+------------------------------------------------------------------
+2.class CountOfDigits{
+    public static void main(String[] args) {
+               int no=123;
+               System.out.println(countDigit(no));
+    }
+public static int countDigit(int n){
+       int count=0;
+       while(n!=0){
+           int rem = n%10;
+           count++;
+           n=n/10;
+       }
+       return count;
+    }
+}
+------------------------------------------------------------------
+3. class ReverseNumber{
+    public static void main(String[] args) {
+               int no=123;
+               System.out.println(revDigit(no));
+    }
+public static int revDigit(int n){
+       int rev=0;
+       while(n!=0){
+           int rem = n%10;
+           rev=(rev*10)+rem;
+           n=n/10;
+       }
+       return rev;
+    }
+}
+------------------------------------------------------------------
+4. class GcdOfDigit{
+    public static void main(String[] args) {
+               System.out.println(gcd(12,18));
+    }
+public static int gcd(int a,int b){
+       while(b!=0){
+           int rem = a%b;
+           a=b;
+           b=rem;
+       }
+       return a;
+    }
+}
+-------------------------------------------------------------------
