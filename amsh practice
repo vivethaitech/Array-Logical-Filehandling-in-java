@@ -62,3 +62,211 @@ public static int gcd(int a,int b){
     }
 }
 -------------------------------------------------------------------
+
+logical program
+palindrome
+
+class HelloWorld {
+    public static void main(String[] args) {
+     int no=123321;
+     int num=no;
+     int rev=0;
+     while(no!=0){
+         int rem=no%10;
+         rev=(rev*10)+rem;
+         no=no/10;
+     }
+     if(rev==num){
+         System.out.println("palindrome");
+     }else{
+         System.out.println("not a palindrome");
+     }
+    }
+}
+-------------------------------------------------------------------------------
+prime number
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a=5,b=20;
+       while(a<=b){
+           boolean found=true;
+         for(int i=2;i<=a/2;i++){
+             if(a%i==0){
+                 found=false;
+                 break;
+             }
+         }
+             if(found){
+             System.out.print(a+" ");
+         }
+         a++;
+       }
+    }
+}
+---------------------------------------------------------------------
+Fibonacci series
+
+class HelloWorld {
+    public static void main(String[] args) {
+      int n1=0,n2=1;
+      System.out.print(n1+" "+n2);
+      int i=2;
+      while(i<=10){
+          int n3=n1+n2;
+          System.out.print(" "+n3);
+          n1=n2;
+          n2=n3;
+          i++;
+      }
+    }
+}
+----------------------------------------------------------------------
+Armstrong number
+
+class HelloWorld {
+    public static void main(String[] args) {
+      int no=153;
+      int n=no;
+      int sum=0;
+      while(no!=0){
+          int rem=no%10;
+          sum=sum+(rem*rem*rem);
+          no=no/10;
+      }
+      if(sum==n){
+          System.out.println("Armstrong number");
+      }else{
+          System.out.println("Not a armstrong number");
+      }
+    }
+}
+-----------------------------------------------------------------------------
+perfect number
+
+class HelloWorld {
+    public static void main(String[] args) {
+      int no=6;
+      int n=no;
+      int i=1,sum=0;
+      while(i<6){
+          if(no%i==0){
+           sum=sum+i; 
+          }
+          i++;
+      }
+      if(n==sum){
+          System.out.println("perfect number");
+      } else{
+          System.out.println("not a perfect number");
+      }
+    }
+}
+----------------------------------------------------------------------------
+duplicate number
+
+class HelloWorld {
+    public static void main(String[] args) {
+     int[] a={10,12,13,12,11};
+     for(int i=0;i<a.length-1;i++){
+         for(int j=i+1;j<a.length;j++){
+             if(a[i]==a[j]){
+                 System.out.print(a[i]+" ");
+             }
+         }
+     }
+    }
+}
+----------------------------------------------------------------------
+Sum of Elements in an Array:
+
+class HelloWorld {
+    public static void main(String[] args) {
+       int[] a={10,12,10,10};
+       int sum=0;
+       for(int i=0;i<a.length;i++){
+           sum=sum+a[i];
+       }
+       System.out.println(sum);
+    }
+}
+---------------------------------------------------------------------
+Second Largest Number in array
+
+class HelloWorld {
+    public static void main(String[] args) {
+       int[] a={10,12,15,11};
+       int max=Integer.MIN_VALUE;
+       int smax=Integer.MIN_VALUE;
+       for(int i=0;i<a.length;i++){
+           if(a[i]>max){
+               smax=max;
+               max=a[i];
+           } else if(a[i]!=max && a[i]>smax){
+               smax=a[i];
+           }
+       }
+       System.out.print("The second maximum no is: "+smax);
+    }
+}
+------------------------------------------------------------
+bubble sort
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+       int[] a={10,12,15,11};
+       for(int i=0;i<a.length-1;i++){
+       for(int j=1;j<a.length-i;j++){
+           if(a[j-1]>a[j]){
+               int temp=a[j-1];
+               a[j-1]=a[j];
+               a[j]=temp;
+           }
+       }
+    }
+    System.out.println(Arrays.toString(a));
+}
+}
+-----------------------------------------------------------------
+print even and odd seperately
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("even numbers");
+        int i=1;
+    while(i<=100){
+        if(i%2==0){
+            System.out.print(i);
+        }
+        i++;
+    }
+     System.out.println("odd numbers");
+     i=0;
+    while(i<=100){
+        if(i%2!=0){
+            System.out.print(i);
+        }
+        i++;
+    }
+}
+}
+-----------------------------------------------------------------
+lcm of two number
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+      int a=12,b=6;
+      int prod=a*b;
+      while(b!=0){
+          int rem=a%b;
+          a=b;
+          b=rem;
+      }
+      int lcm=prod/a;
+      System.out.println(lcm);
+}
+}
+-------------------------------------------------------------------
