@@ -305,4 +305,30 @@ class HelloWorld {
        }
     }
 }
-----------------------------------------------------------------------
+-------------------------------------------------------------------------
+14. check the number is power of 2
+
+class HelloWorld {
+    public static void main(String[] args) {
+       int k=16;
+       boolean power =true;
+       if(k<=0){
+           power=false;
+       }
+       while(k>1){
+           if(k%2!=0){
+               power=false;
+               break;
+           }
+           k=k/2;
+       }
+       if(power && k==1){
+           System.out.println("Yes it is power of 2");
+       }
+       else{
+           System.out.println("Yes it is not a power of 2");
+       }
+    }
+}
+------------------------------------------------------------------------------
+
