@@ -331,4 +331,16 @@ class HelloWorld {
     }
 }
 ------------------------------------------------------------------------------
+SQL Practice
+-----------
+1. Find Employees with Maximum Salary in Each Department:
+select department, max(salary) from employees group by department;
 
+2. Display Duplicate Rows in a Table:
+select department, count(*) from employees group by department having count(*)>1;
+
+3. second maximum salary
+select max(salary) from employees where salary not in(select max(salary) from employees);
+
+4.Join Two Tables and Display Results:
+select e.name,d.employee_name from employee e inner join department d on e.department_id=d.department_id;
