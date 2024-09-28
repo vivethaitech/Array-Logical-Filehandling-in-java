@@ -64,7 +64,9 @@ public static int gcd(int a,int b){
 -------------------------------------------------------------------
 
 logical program
-palindrome
+---------------
+
+1. palindrome
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -84,7 +86,7 @@ class HelloWorld {
     }
 }
 -------------------------------------------------------------------------------
-prime number
+2. prime number
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -105,7 +107,7 @@ class HelloWorld {
     }
 }
 ---------------------------------------------------------------------
-Fibonacci series
+3. Fibonacci series
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -122,7 +124,7 @@ class HelloWorld {
     }
 }
 ----------------------------------------------------------------------
-Armstrong number
+4. Armstrong number
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -142,7 +144,7 @@ class HelloWorld {
     }
 }
 -----------------------------------------------------------------------------
-perfect number
+5. perfect number
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -163,7 +165,7 @@ class HelloWorld {
     }
 }
 ----------------------------------------------------------------------------
-duplicate number
+6. duplicate number
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -178,7 +180,7 @@ class HelloWorld {
     }
 }
 ----------------------------------------------------------------------
-Sum of Elements in an Array:
+7. Sum of Elements in an Array:
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -191,7 +193,7 @@ class HelloWorld {
     }
 }
 ---------------------------------------------------------------------
-Second Largest Number in array
+8. Second Largest Number in array
 
 class HelloWorld {
     public static void main(String[] args) {
@@ -210,7 +212,7 @@ class HelloWorld {
     }
 }
 ------------------------------------------------------------
-bubble sort
+9. bubble sort
 
 import java.util.*;
 class HelloWorld {
@@ -229,7 +231,7 @@ class HelloWorld {
 }
 }
 -----------------------------------------------------------------
-print even and odd seperately
+10. print even and odd seperately
 
 import java.util.*;
 class HelloWorld {
@@ -253,7 +255,7 @@ class HelloWorld {
 }
 }
 -----------------------------------------------------------------
-lcm of two number
+11. lcm of two number
 
 import java.util.*;
 class HelloWorld {
@@ -270,3 +272,37 @@ class HelloWorld {
 }
 }
 -------------------------------------------------------------------
+12. find missing number in number series
+
+class HelloWorld {
+    public static void main(String[] args) {
+       int[] arr={1,2,4,5};
+       int n=arr.length+1;
+       int org=(n*(n+1))/2;
+       int sum=0;
+       for(int i=0;i<arr.length;i++){
+           sum=sum+arr[i];
+       }
+       int missing=org-sum;
+       System.out.println(missing);
+        
+    }
+}
+---------------------------------------------------------------------
+13.
+*
+* *
+* * *
+* * * *
+* * * * *
+class HelloWorld {
+    public static void main(String[] args) {
+       for(int row=0;row<5;row++){
+         for(int col=0;col<=row;col++){
+             System.out.print(" *");
+         }
+         System.out.println();
+       }
+    }
+}
+----------------------------------------------------------------------
