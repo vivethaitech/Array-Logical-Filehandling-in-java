@@ -331,6 +331,42 @@ class HelloWorld {
     }
 }
 ------------------------------------------------------------------------------
+15. strong number check
+
+class HelloWorld {
+    public static void main(String[] args) {
+       int no=145,sum=0;
+       int n=no;
+       while(no!=0){
+           int rem=no%10;//5
+           int prod=1;
+           for(int i=1;i<=rem;i++){
+               prod=prod*i;
+           }
+           sum=sum+prod;
+           no=no/10;
+       }
+       if(n==sum){
+           System.out.println("strong number");
+       }else{
+           System.out.println("not a strong number");
+       }
+    }
+}
+------------------------------------------------------------------------------
+16. find common divisor
+class HelloWorld {
+    public static void main(String[] args) {
+       int a=20, b=25;
+       for(int i=1;i<=a/2;i++){
+           if(a%i==0 && b%i==0){
+               System.out.print(i);
+           }
+       }
+    }
+}
+
+------------------------------------------------------------------------------
 SQL Practice
 -----------
 1. Find Employees with Maximum Salary in Each Department:
