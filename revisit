@@ -43,3 +43,21 @@ Letters are: WelcomeToJavaProgramming
 Numbers are: 234567890
 Special Characters are: @#!!
 ------------------------------------------------------------------------------------
+// Input: "The prices are 100, 200, and 300 dollars."
+// Output:
+// Sum of numbers: 600
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="The prices are 100, 200, and 300 dollars.";
+        String[] s=str.split("[^0-9]");
+        int sum=0;
+        for(String num:s){
+            if(!num.isEmpty()){
+                sum=sum+Integer.parseInt(num);
+            }
+        }
+        System.out.println(sum);
+    }
+}
+----------------------------------------------------------------------------------------
