@@ -306,3 +306,21 @@ public class PalindromeNumber {
 	}
 }
 ----------------------------------------------------------------------------------------
+14.length of the largest word in sentence
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="Java programming is interesting";
+        String[] st=str.split(" ");
+        int max=0;
+        String word="";
+        for(int i=0;i<st.length;i++){
+            if(st[i].length()>max){
+            max=st[i].length();
+            word=st[i];
+            }
+        }
+        System.out.println("largest word is "+word+" and length is "+max);
+    }
+}
+-------------------------------------------------------------------------------------------
