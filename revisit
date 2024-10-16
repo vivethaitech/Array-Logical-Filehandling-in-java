@@ -61,3 +61,24 @@ class HelloWorld {
     }
 }
 ----------------------------------------------------------------------------------------
+Input:
+A string and a character (e.g., "hello world" and 'l').
+Output:
+The string after removing the character (e.g., "heo word").
+
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="Hello World";
+        StringBuilder sb = new StringBuilder();
+        char letter='o';
+        for(int i=0;i<str.length();i++){
+            if(str.charAt(i)!=letter){
+                sb.append(str.charAt(i));
+            }
+        }
+        System.out.println(sb.toString());
+    }
+}
+output:
+Hell Wrld
+--------------------------------------------------------------------------------------------
