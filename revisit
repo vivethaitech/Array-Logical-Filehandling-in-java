@@ -81,4 +81,23 @@ class HelloWorld {
 }
 output:
 Hell Wrld
+
+import java.util.*;
+class HelloWorld {
+    public static void main(String[] args) {
+        String str="Hello World";
+        char letter='l';
+        String result="";
+        ArrayList<Character> al = new ArrayList<Character>();
+        for(int i=0;i<str.length();i++)
+            if(str.charAt(i)!=letter){
+                al.add(str.charAt(i));
+            }
+        for(char c:al)
+        result+=c;
+        System.out.println(result);
+    }
+}
+output:
+Hell Wrld
 --------------------------------------------------------------------------------------------
