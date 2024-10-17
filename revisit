@@ -117,3 +117,33 @@ class HelloWorld {
 output:
 Hell Wrld
 --------------------------------------------------------------------------------------------
+//initialize integer value as 12
+//square the number
+//reverse the original number
+//square the reversed number
+//then reverse the square
+//finally check the original square and reverse of reversed number square are equal..if equal adams else not.
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int org= 13;
+        int orgSquare=org*org;//144
+        int orgRev=reverseNo(org);//21
+        int orgRevSquare=orgRev*orgRev;//441
+        int orgRevSquareRev=reverseNo(orgRevSquare);//144
+         if(orgSquare==orgRevSquareRev){
+            System.out.println("adams number");
+        } else {
+            System.out.println("not a adams number");
+        }
+    }
+        static int reverseNo(int no){
+        int rev=0;
+        while(no!=0){
+            int rem=no%10;
+            rev=(rev*10)+rem;
+            no=no/10;
+        }
+        return rev;
+        }
+}
